@@ -5,7 +5,17 @@ VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ShortTermForecastAzure", "ShortTermForecastAzure\ShortTermForecastAzure.sfproj", "{A4149875-7630-4304-BABF-78937D84C247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{85340348-0611-47D6-B36B-1878DED0A5E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "Web\Web.csproj", "{85340348-0611-47D6-B36B-1878DED0A5E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataPreparer", "DataPreparer\DataPreparer.csproj", "{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataExtractor", "DataExtractor\DataExtractor.csproj", "{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingStatefulService", "TrainingStatefulService\TrainingStatefulService.csproj", "{09C566A5-9D07-4406-B854-3089A682FDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PredictStatefulService", "PredictStatefulService\PredictStatefulService.csproj", "{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +41,38 @@ Global
 		{85340348-0611-47D6-B36B-1878DED0A5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85340348-0611-47D6-B36B-1878DED0A5E1}.Release|x64.ActiveCfg = Release|Any CPU
 		{85340348-0611-47D6-B36B-1878DED0A5E1}.Release|x64.Build.0 = Release|Any CPU
+		{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}.Debug|x64.ActiveCfg = Debug|x64
+		{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}.Debug|x64.Build.0 = Debug|x64
+		{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}.Release|Any CPU.ActiveCfg = Release|x64
+		{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}.Release|x64.ActiveCfg = Release|x64
+		{048E55A3-FDBC-4EEF-8DD1-6CD32BC441AD}.Release|x64.Build.0 = Release|x64
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Debug|x64.Build.0 = Debug|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Release|x64.ActiveCfg = Release|Any CPU
+		{C5008D0D-4E0F-44AB-B401-B8DF9B20C062}.Release|x64.Build.0 = Release|Any CPU
+		{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}.Debug|x64.ActiveCfg = Debug|x64
+		{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}.Debug|x64.Build.0 = Debug|x64
+		{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}.Release|Any CPU.ActiveCfg = Release|x64
+		{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}.Release|x64.ActiveCfg = Release|x64
+		{FE8D6F27-76C7-435D-8136-8DB879FF3F5F}.Release|x64.Build.0 = Release|x64
+		{09C566A5-9D07-4406-B854-3089A682FDFC}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{09C566A5-9D07-4406-B854-3089A682FDFC}.Debug|x64.ActiveCfg = Debug|x64
+		{09C566A5-9D07-4406-B854-3089A682FDFC}.Debug|x64.Build.0 = Debug|x64
+		{09C566A5-9D07-4406-B854-3089A682FDFC}.Release|Any CPU.ActiveCfg = Release|x64
+		{09C566A5-9D07-4406-B854-3089A682FDFC}.Release|x64.ActiveCfg = Release|x64
+		{09C566A5-9D07-4406-B854-3089A682FDFC}.Release|x64.Build.0 = Release|x64
+		{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}.Debug|x64.ActiveCfg = Debug|x64
+		{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}.Debug|x64.Build.0 = Debug|x64
+		{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}.Release|Any CPU.ActiveCfg = Release|x64
+		{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}.Release|x64.ActiveCfg = Release|x64
+		{AF0AF1AD-796D-4236-89B7-F91B8A39F3DA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

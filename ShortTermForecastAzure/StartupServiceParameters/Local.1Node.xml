@@ -1,6 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<StartupServices xmlns="http://schemas.microsoft.com/2011/01/fabric" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StartupServices xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
+    <Parameter Name="PredictStatefulService_PartitionCount" Value="1" />
+    <Parameter Name="PredictStatefulService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="PredictStatefulService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="TrainingStatefulService_PartitionCount" Value="1" />
+    <Parameter Name="TrainingStatefulService_MinReplicaSetSize" Value="1" />
+    <Parameter Name="TrainingStatefulService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="DataExtractor_InstanceCount" Value="1" />
+    <Parameter Name="DataPreparer_PartitionCount" Value="1" />
+    <Parameter Name="DataPreparer_MinReplicaSetSize" Value="1" />
+    <Parameter Name="DataPreparer_TargetReplicaSetSize" Value="1" />
     <Parameter Name="Web_InstanceCount" Value="1" />
   </Parameters>
 </StartupServices>

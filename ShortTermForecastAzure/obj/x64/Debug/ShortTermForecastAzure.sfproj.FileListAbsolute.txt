@@ -1,0 +1,1 @@
+C:\Users\Dusan\source\repos\ShortTermForecastAzure\ShortTermForecastAzure\obj\x64\Debug\ShortTermForecastAzure.sfproj.CoreCompileInputs.cache

@@ -33,12 +33,16 @@
     <None Include="StartupServices.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\DataExtractor\DataExtractor.csproj" />
+    <ProjectReference Include="..\DataPreparer\DataPreparer.csproj" />
+    <ProjectReference Include="..\PredictStatefulService\PredictStatefulService.csproj" />
+    <ProjectReference Include="..\TrainingStatefulService\TrainingStatefulService.csproj" />
     <ProjectReference Include="..\Web\Web.csproj">
       <ServiceLaunchUrl>http://localhost:{ServicePort}/</ServiceLaunchUrl>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>
